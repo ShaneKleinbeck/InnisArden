@@ -1,0 +1,25 @@
+'use strict';
+
+console.log('CONNECTED');
+
+$(document).ready(function(){
+  // Smooth Scroll Functionality
+  smoothScroll.init({
+      selector: '[data-scroll]', // Selector for links (must be a class, ID, data attribute, or element tag)
+      selectorHeader: null, // Selector for fixed headers (must be a valid CSS selector) [optional]
+      speed: 500, // Integer. How fast to complete the scroll in milliseconds
+      easing: 'easeInOutCubic', // Easing pattern to use
+      offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
+      callback: function ( anchor, toggle ) {} // Function to run after scrolling
+  });
+
+  // $(window).scroll(function(){
+  //   var scroll = $(window).scrollTop();
+  //   var height = document.documentElement.clientHeight * .95;
+  //   if(scroll > height){
+  //     $('#menu-logo').css({"color": "black"});
+  //   }
+  // })
+});
+
+
