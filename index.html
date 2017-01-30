@@ -25,6 +25,17 @@
 </head>
 <body>
 
+
+<div class="hide-overlay">
+  <div class="overlay-content">
+    <a class="overlay-nav" data-scroll href="#history">History</a>
+    <a class="overlay-nav" data-scroll href="#store">Store</a>
+    <a class="overlay-nav" data-scroll href="">Awards</a>
+    <a class="overlay-nav" data-scroll href="">Gallery</a>
+    <a class="overlay-nav" data-scroll href="">Contact</a>
+  </div>
+</div>
+
 <div class="video-wrapper">
   <div class="video-nav">
     <ul class="list-unstyled">
@@ -33,7 +44,7 @@
           <span>History</span>
         </div>
       </a>
-      <a href="#" data-scroll class="nav-section hvr-float">
+      <a href="#store" data-scroll class="nav-section hvr-float">
         <div class="nav-section-background hvr-overline-reveal">
         <span>Store</span>
         </div>
@@ -59,14 +70,14 @@
   </div>
   <div class="video-content">
     <a href="#"><h2 class="video-brand">Innis Arden Records</h2></a>
-    <a href="#"><img src="/public/media/cd-recording.svg" alt="" id="menu-logo"></a>
+    <a><img src="/public/media/cd-recording.svg" alt="" id="menu-logo"></a>
     <div class="video-main-text">
       <h2>Lorem Ipsum</h2>
       <br>
       <p>Sed vel nibh ut elit blandit gravida. Proin ac leo et enim auctor mattis luctus vitae dui. Nulla sodales commodo eros a auctor. Phasellus quis ultricies nisi, eu facilisis diam.</p>
     </div>
   </div>
-  <video class="video-background" src="/public/media/turning_record.mp4"</video>
+  <video autoplay loop class="video-background" src="/public/media/turning_record.mp4"</video>
 </div>
 
 <section id="history">
@@ -84,13 +95,14 @@
   </div>
 </section>
 
+<section id="store"></section>
 
 <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="public/js/index.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="/node_modules/smooth-scroll/dist/js/smooth-scroll.js"></script>
-  <script src="public/js/index.js"></script>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
