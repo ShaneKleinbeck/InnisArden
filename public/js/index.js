@@ -13,13 +13,24 @@ $(document).ready(function(){
       callback: function ( anchor, toggle ) {} // Function to run after scrolling
   });
 
-  // $(window).scroll(function(){
-  //   var scroll = $(window).scrollTop();
-  //   var height = document.documentElement.clientHeight * .95;
-  //   if(scroll > height){
-  //     $('#menu-logo').css({"color": "black"});
-  //   }
-  // })
+  // Hide Brand When Scrolling Past Banner Page
+  $(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+    var height = document.documentElement.clientHeight * .95;
+    if(scroll > height){
+      $('.video-brand').css({"display": "none"});
+    } else {
+      $('.video-brand').css({"display": "block"});
+    }
+  })
+
+  // Toggle Exit Animation For Button Nav
+  $('#menu-logo').click(function(){
+    $('.hide-overlay').toggleClass('video-nav-overlay');
+  });
+  $('.overlay-nav').click(function(){
+    $('.hide-overlay').toggleClass('video-nav-overlay');
+  })
 });
 
 
