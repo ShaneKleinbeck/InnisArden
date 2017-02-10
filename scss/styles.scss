@@ -1,3 +1,13 @@
+// Fonts
+@font-face {
+  font-family: nexa;
+  src: url(/public/fonts/nexa/NexaLight.otf)
+}
+@font-face {
+  font-family: butler;
+  src: url(/public/fonts/Butler/Butler/ButlerMedium.otf)
+}
+
 // Menu Button
 .hide-overlay {
   height: 100%;
@@ -14,11 +24,11 @@
     width: 100%;
     text-align: center;
     position: relative;
-    top: 25%;
+    top: 30%;
     a {
       padding: 1vh;
       text-decoration: none;
-      font-size: 36px;
+      font-size: 3em;
       color: #818181;
       display: block;
       transition: 0.3s;
@@ -48,25 +58,31 @@
   height:100vh;
   overflow: hidden;
   font-family: 'Cardo', serif;
-  .video-nav {
-    position: fixed;
-    top: 90%;
-    left: 20%;
-    z-index: 1;
-    font-size: 1vw;
-    .nav-section {
-      text-decoration: none;
-      color: black;
-      text-align: center;
+  .video-nav{
+    display: none;
+  }
+  @media screen and (min-width: 1024px){
+    .video-nav {
+      display: block;
+      position: fixed;
+      top: 90%;
+      left: 26%;
+      z-index: 1;
       font-size: 1vw;
-      .nav-section-background {
-        height: 5.5vh;
-        width: 12vw;
-        margin: -.1vw;
-        background-color: #EFEFEF;
-        span {
-          position: relative;
-          top: 30%; }
+      .nav-section {
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        font-size: 1vw;
+        .nav-section-background {
+          height: 5.5vh;
+          width: 12vw;
+          margin: -.1vw;
+          background-color: #EFEFEF;
+          span {
+            position: relative;
+            top: 30%; }
+        }
       }
     }
   }
@@ -101,30 +117,127 @@
   }
 }
 
-
-#history {
+#theStore{
   background-color: white;
-  font-family: 'Cardo', serif;
-  padding-top: 10em;
-  height: 100vh;
-  z-index: 2;
-  .history-text {
-    padding: 5em 0 0 10em;
-    text-align: center;
+  .section-header{
+    text-align: left;
+    font-family: 'nexa', serif;
+    background-color: white;
+    padding-top: 5em;
     h1 {
-      padding-bottom: 1.5em;
-      font-size: 2vw;}
-    p {
-      font-size: 1vw;
-      padding-bottom: 1.5em;}
+      margin-left: 2em;
+      font-size: 4em;
+    }
   }
-  .history-image {
-    padding-right: 0;
+  .theStoreContainer{
+    padding: 5em 8em 0 8em;
+    height: 50em;
+    text-align: center;
+    font-family: 'butler', serif;
+    .theStoreMedia1{
+      background: url('/public/media/theStore1.jpg') no-repeat center center;
+      background-size: cover;
+      height: 100%;
+    }
+    .theStoreText1{
+      background-color: #96858F;
+      height: 100%;
+      color: white;
+      h2{
+        padding: 0 1em 0 1em;
+        margin-top: 2em;
+        font-size: 3.5em;
+        @media (min-width: 1200px){
+          font-size: 2.5em;
+        }
+        @media (min-width: 1312px){
+          font-size: 3.5em;
+        }
+      }
+      p {
+        margin: 3em;
+        padding: 0 4em 0 4em;
+        font-family: nexa;
+        font-size: 1.1em;
+        @media (min-width: 1308px){
+          font-size: 1em;
+        }
+        @media (min-width: 1480px){
+          font-size: 1.1em;
+        }
+        @media (min-width: 1590px){
+          font-size: 1.2em;
+        }
+      }
+    }
+     .theStoreMedia2{
+      background: url('/public/media/theStore2.jpg') no-repeat center center;
+      background-size: cover;
+      height: 100%;
+    }
+    .theStoreText2{
+      background-color: white;
+      height: 100%;
+      color: black;
+      h2{
+        padding: 0 1em 0 1em;
+        margin-top: 2em;
+        font-size: 4em;
+        color: #96858F;
+      }
+      p {
+        font-size: 1em;
+        margin: 2em;
+        padding: 0 4em 0 4em;
+        font-family: nexa;
+        @media (min-width: 1308px){
+          font-size: 1em;
+        }
+        @media (min-width: 1480px){
+          font-size: 1.1em;
+        }
+        @media (min-width: 1590px){
+          font-size: 1.2em;
+        }
+      }
+    }
+    .theStoreMedia3{
+      background: url('/public/media/theStore4.jpg') no-repeat center center;
+      background-size: cover;
+      height: 100%;
+    }
+    .theStoreText3{
+      background-color: #96858F;
+      height: 100%;
+      color: white;
+      h2{
+        padding: 0 1em 0 1em;
+        margin-top: 2em;
+        font-size: 3em;
+        @media (min-width: 1364px){
+          font-size: 3.5em;
+        }
+        @media (min-width: 1510px){
+          font-size: 4em;
+        }
+      }
+      p {
+        font-size: 1.2em;
+        margin: 3em;
+        font-family: nexa;
+        @media (min-width: 1308px){
+          font-size: 1em;
+        }
+        @media (min-width: 1480px){
+          font-size: 1.1em;
+        }
+        @media (min-width: 1590px){
+          font-size: 1.2em;
+        }
+      }
+    }
   }
 }
 
-#store{
-  height: 50vh;
-  background-color: white;
-}
+
 

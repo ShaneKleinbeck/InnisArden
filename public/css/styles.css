@@ -1,3 +1,11 @@
+@font-face {
+  font-family: nexa;
+  src: url(/public/fonts/nexa/NexaLight.otf); }
+
+@font-face {
+  font-family: butler;
+  src: url(/public/fonts/Butler/Butler/ButlerMedium.otf); }
+
 .hide-overlay {
   height: 100%;
   width: 0%;
@@ -13,11 +21,11 @@
     width: 100%;
     text-align: center;
     position: relative;
-    top: 25%; }
+    top: 30%; }
     .hide-overlay .overlay-content a {
       padding: 1vh;
       text-decoration: none;
-      font-size: 36px;
+      font-size: 3em;
       color: #818181;
       display: block;
       transition: 0.3s;
@@ -43,24 +51,28 @@
   overflow: hidden;
   font-family: 'Cardo', serif; }
   .video-wrapper .video-nav {
-    position: fixed;
-    top: 90%;
-    left: 20%;
-    z-index: 1;
-    font-size: 1vw; }
-    .video-wrapper .video-nav .nav-section {
-      text-decoration: none;
-      color: black;
-      text-align: center;
+    display: none; }
+  @media screen and (min-width: 1024px) {
+    .video-wrapper .video-nav {
+      display: block;
+      position: fixed;
+      top: 90%;
+      left: 26%;
+      z-index: 1;
       font-size: 1vw; }
-      .video-wrapper .video-nav .nav-section .nav-section-background {
-        height: 5.5vh;
-        width: 12vw;
-        margin: -.1vw;
-        background-color: #EFEFEF; }
-        .video-wrapper .video-nav .nav-section .nav-section-background span {
-          position: relative;
-          top: 30%; }
+      .video-wrapper .video-nav .nav-section {
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        font-size: 1vw; }
+        .video-wrapper .video-nav .nav-section .nav-section-background {
+          height: 5.5vh;
+          width: 12vw;
+          margin: -.1vw;
+          background-color: #EFEFEF; }
+          .video-wrapper .video-nav .nav-section .nav-section-background span {
+            position: relative;
+            top: 30%; } }
   .video-wrapper .video-background {
     z-index: -2;
     position: fixed;
@@ -90,24 +102,108 @@
     left: 96%;
     top: 2%; }
 
-#history {
-  background-color: white;
-  font-family: 'Cardo', serif;
-  padding-top: 10em;
-  height: 100vh;
-  z-index: 2; }
-  #history .history-text {
-    padding: 5em 0 0 10em;
-    text-align: center; }
-    #history .history-text h1 {
-      padding-bottom: 1.5em;
-      font-size: 2vw; }
-    #history .history-text p {
-      font-size: 1vw;
-      padding-bottom: 1.5em; }
-  #history .history-image {
-    padding-right: 0; }
-
-#store {
-  height: 50vh;
+#theStore {
   background-color: white; }
+  #theStore .section-header {
+    text-align: left;
+    font-family: 'nexa', serif;
+    background-color: white;
+    padding-top: 5em; }
+    #theStore .section-header h1 {
+      margin-left: 2em;
+      font-size: 4em; }
+  #theStore .theStoreContainer {
+    padding: 5em 8em 0 8em;
+    height: 50em;
+    text-align: center;
+    font-family: 'butler', serif; }
+    #theStore .theStoreContainer .theStoreMedia1 {
+      background: url("/public/media/theStore1.jpg") no-repeat center center;
+      background-size: cover;
+      height: 100%; }
+    #theStore .theStoreContainer .theStoreText1 {
+      background-color: #96858F;
+      height: 100%;
+      color: white; }
+      #theStore .theStoreContainer .theStoreText1 h2 {
+        padding: 0 1em 0 1em;
+        margin-top: 2em;
+        font-size: 3.5em; }
+        @media (min-width: 1200px) {
+          #theStore .theStoreContainer .theStoreText1 h2 {
+            font-size: 2.5em; } }
+        @media (min-width: 1312px) {
+          #theStore .theStoreContainer .theStoreText1 h2 {
+            font-size: 3.5em; } }
+      #theStore .theStoreContainer .theStoreText1 p {
+        margin: 3em;
+        padding: 0 4em 0 4em;
+        font-family: nexa;
+        font-size: 1.1em; }
+        @media (min-width: 1308px) {
+          #theStore .theStoreContainer .theStoreText1 p {
+            font-size: 1em; } }
+        @media (min-width: 1480px) {
+          #theStore .theStoreContainer .theStoreText1 p {
+            font-size: 1.1em; } }
+        @media (min-width: 1590px) {
+          #theStore .theStoreContainer .theStoreText1 p {
+            font-size: 1.2em; } }
+    #theStore .theStoreContainer .theStoreMedia2 {
+      background: url("/public/media/theStore2.jpg") no-repeat center center;
+      background-size: cover;
+      height: 100%; }
+    #theStore .theStoreContainer .theStoreText2 {
+      background-color: white;
+      height: 100%;
+      color: black; }
+      #theStore .theStoreContainer .theStoreText2 h2 {
+        padding: 0 1em 0 1em;
+        margin-top: 2em;
+        font-size: 4em;
+        color: #96858F; }
+      #theStore .theStoreContainer .theStoreText2 p {
+        font-size: 1em;
+        margin: 2em;
+        padding: 0 4em 0 4em;
+        font-family: nexa; }
+        @media (min-width: 1308px) {
+          #theStore .theStoreContainer .theStoreText2 p {
+            font-size: 1em; } }
+        @media (min-width: 1480px) {
+          #theStore .theStoreContainer .theStoreText2 p {
+            font-size: 1.1em; } }
+        @media (min-width: 1590px) {
+          #theStore .theStoreContainer .theStoreText2 p {
+            font-size: 1.2em; } }
+    #theStore .theStoreContainer .theStoreMedia3 {
+      background: url("/public/media/theStore4.jpg") no-repeat center center;
+      background-size: cover;
+      height: 100%; }
+    #theStore .theStoreContainer .theStoreText3 {
+      background-color: #96858F;
+      height: 100%;
+      color: white; }
+      #theStore .theStoreContainer .theStoreText3 h2 {
+        padding: 0 1em 0 1em;
+        margin-top: 2em;
+        font-size: 3em; }
+        @media (min-width: 1364px) {
+          #theStore .theStoreContainer .theStoreText3 h2 {
+            font-size: 3.5em; } }
+        @media (min-width: 1510px) {
+          #theStore .theStoreContainer .theStoreText3 h2 {
+            font-size: 4em; } }
+      #theStore .theStoreContainer .theStoreText3 p {
+        font-size: 1.2em;
+        margin: 3em;
+        font-family: nexa; }
+        @media (min-width: 1308px) {
+          #theStore .theStoreContainer .theStoreText3 p {
+            font-size: 1em; } }
+        @media (min-width: 1480px) {
+          #theStore .theStoreContainer .theStoreText3 p {
+            font-size: 1.1em; } }
+        @media (min-width: 1590px) {
+          #theStore .theStoreContainer .theStoreText3 p {
+            font-size: 1.2em; } }
