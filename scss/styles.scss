@@ -1,11 +1,14 @@
 // Fonts
 @font-face {
   font-family: nexa;
-  src: url(/public/fonts/nexa/NexaLight.otf)
-}
+  src: url(/public/font/nexa/NexaLight.otf); }
 @font-face {
   font-family: butler;
-  src: url(/public/fonts/Butler/Butler/ButlerMedium.otf)
+  src: url(/public/font/Butler/Butler/ButlerMedium.otf); }
+
+#remainder{
+  background-color: white;
+  width: 100%;
 }
 
 // Menu Button
@@ -32,9 +35,7 @@
       color: #818181;
       display: block;
       transition: 0.3s;
-      font-family: 'Cardo', serif;
-    }
-  }
+      font-family: 'Cardo', serif; } }
   .overlay-content a:hover, .overlay-content a:focus {
     color: #f1f1f1;
   }
@@ -59,8 +60,7 @@
   overflow: hidden;
   font-family: 'Cardo', serif;
   .video-nav{
-    display: none;
-  }
+    display: none; }
   @media screen and (min-width: 1024px){
     .video-nav {
       display: block;
@@ -81,11 +81,7 @@
           background-color: #EFEFEF;
           span {
             position: relative;
-            top: 30%; }
-        }
-      }
-    }
-  }
+            top: 30%; } } } } }
   .video-background {
     z-index: -2;
     position: fixed;
@@ -119,6 +115,8 @@
 
 #theStore{
   background-color: white;
+  padding-bottom: 5em;
+  padding-top: 5em;
   .section-header{
     text-align: left;
     font-family: 'nexa', serif;
@@ -126,19 +124,16 @@
     padding-top: 5em;
     h1 {
       margin-left: 2em;
-      font-size: 4em;
-    }
-  }
+      font-size: 4em; } }
   .theStoreContainer{
-    padding: 5em 8em 0 8em;
+    padding: 0 8em 0 8em;
     height: 50em;
     text-align: center;
     font-family: 'butler', serif;
     .theStoreMedia1{
       background: url('/public/media/theStore1.jpg') no-repeat center center;
       background-size: cover;
-      height: 100%;
-    }
+      height: 100%; }
     .theStoreText1{
       background-color: #96858F;
       height: 100%;
@@ -148,33 +143,24 @@
         margin-top: 2em;
         font-size: 3.5em;
         @media (min-width: 1200px){
-          font-size: 2.5em;
-        }
+          font-size: 2.5em; }
         @media (min-width: 1312px){
-          font-size: 3.5em;
-        }
-      }
+          font-size: 3.5em; } }
       p {
         margin: 3em;
         padding: 0 4em 0 4em;
         font-family: nexa;
         font-size: 1.1em;
         @media (min-width: 1308px){
-          font-size: 1em;
-        }
+          font-size: 1em; }
         @media (min-width: 1480px){
-          font-size: 1.1em;
-        }
+          font-size: 1.1em; }
         @media (min-width: 1590px){
-          font-size: 1.2em;
-        }
-      }
-    }
-     .theStoreMedia2{
+          font-size: 1.2em; } } }
+    .theStoreMedia2{
       background: url('/public/media/theStore2.jpg') no-repeat center center;
       background-size: cover;
-      height: 100%;
-    }
+      height: 100%; }
     .theStoreText2{
       background-color: white;
       height: 100%;
@@ -183,29 +169,22 @@
         padding: 0 1em 0 1em;
         margin-top: 2em;
         font-size: 4em;
-        color: #96858F;
-      }
+        color: #96858F; }
       p {
         font-size: 1em;
         margin: 2em;
         padding: 0 4em 0 4em;
         font-family: nexa;
         @media (min-width: 1308px){
-          font-size: 1em;
-        }
+          font-size: 1em; }
         @media (min-width: 1480px){
-          font-size: 1.1em;
-        }
+          font-size: 1.1em; }
         @media (min-width: 1590px){
-          font-size: 1.2em;
-        }
-      }
-    }
+          font-size: 1.2em; } } }
     .theStoreMedia3{
       background: url('/public/media/theStore4.jpg') no-repeat center center;
       background-size: cover;
-      height: 100%;
-    }
+      height: 100%; }
     .theStoreText3{
       background-color: #96858F;
       height: 100%;
@@ -215,22 +194,17 @@
         margin-top: 2em;
         font-size: 3em;
         @media (min-width: 1364px){
-          font-size: 3.5em;
-        }
+          font-size: 3.5em; }
         @media (min-width: 1510px){
-          font-size: 4em;
-        }
-      }
+          font-size: 4em; } }
       p {
         font-size: 1.2em;
         margin: 3em;
         font-family: nexa;
         @media (min-width: 1308px){
-          font-size: 1em;
-        }
+          font-size: 1em; }
         @media (min-width: 1480px){
-          font-size: 1.1em;
-        }
+          font-size: 1.1em; }
         @media (min-width: 1590px){
           font-size: 1.2em;
         }
@@ -239,5 +213,133 @@
   }
 }
 
+#awards{
+  padding-bottom: 5em;
+  .section-header{
+    text-align: left;
+    font-family: 'nexa', serif;
+    padding-top: 5em;
+    h1 {
+      margin-left: 2em;
+      font-size: 4em; } }
+  .awardsMain{
+    padding: 0 8em 0 8em;
+    text-align: center;
+    .awardsSecond{
+      height: 12em;
+      #award1{
+        height: 10em;
+        background: url('/public/media/award1.jpg') center / cover; }
+      #award2{
+        height: 10em;
+        background: url('/public/media/award2.jpg') center / cover; }
+      #award3{
+        height: 10em;
+        background: url('/public/media/award3.jpg') center / cover;
+      }
+    }
+  }
+}
+
+#gallery{
+  padding-bottom: 5em;
+  .section-header{
+    text-align: left;
+    font-family: 'nexa', serif;
+    h1 {
+      margin-left: 2em;
+      font-size: 4em; } }
+  .galleryGrid{
+    padding: 0 5em 0 5em;
+    width: 100vw;
+    .gridImg {
+      height: 15vw;
+      width: 100%;
+      margin-bottom: 2em;
+    }
+  }
+}
+
+// Toggle Form
+#contact-us{
+  background-color: white;
+  padding-top: 3em;
+  .section-header{
+    text-align: left;
+    font-family: 'nexa', serif;
+    h1 {
+      margin-left: 2em;
+      font-size: 4em; } }
+  h5{
+    padding-bottom: 2em; }
+  #toggleInput{
+    padding-bottom: 3em; }
+  .togglepadding{
+    padding-right: 0; }
+  .toggletext{
+    padding-left: 0;
+    position: relative; }
+  // Toggle -- Credit to callmenick
+  .cmn-toggle {
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden; }
+  .cmn-toggle + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none; }
+  input.cmn-toggle-round-flat + label {
+    padding: 2px;
+    width: 66px;
+    height: 36px;
+    background-color: #BBBBBB;
+    border-radius: 30px;
+    transition: background 0.2s; }
+  input.cmn-toggle-round-flat + label:before,
+  input.cmn-toggle-round-flat + label:after {
+    display: block;
+    position: absolute;
+    content: ""; }
+  input.cmn-toggle-round-flat + label:before {
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    background-color: #fff;
+    border-radius: 30px;
+    transition: background 0.2s; }
+  input.cmn-toggle-round-flat + label:after {
+    top: 4px;
+    left: 4px;
+    bottom: 4px;
+    width: 28px;
+    background-color: #BBBBBB;
+    border-radius: 30px;
+    transition: margin 0.2s, background 0.2s; }
+  input.cmn-toggle-round-flat:checked + label {
+    background-color: #0c3766; }
+  input.cmn-toggle-round-flat:checked + label:after {
+    margin-left: 30px;
+    background-color: #0c3766; }
+  .jumbotron{
+    background-color: white;
+    display: none;
+    .btn-indigo{
+      background-color: #0c3766;
+      color: white;
+    }
+    textarea{
+      max-width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+footer{
+  height: 8em;
+  background-color: #32404f;
+}
 
 

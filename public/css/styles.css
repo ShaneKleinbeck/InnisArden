@@ -1,10 +1,14 @@
 @font-face {
   font-family: nexa;
-  src: url(/public/fonts/nexa/NexaLight.otf); }
+  src: url(/public/font/nexa/NexaLight.otf); }
 
 @font-face {
   font-family: butler;
-  src: url(/public/fonts/Butler/Butler/ButlerMedium.otf); }
+  src: url(/public/font/Butler/Butler/ButlerMedium.otf); }
+
+#remainder {
+  background-color: white;
+  width: 100%; }
 
 .hide-overlay {
   height: 100%;
@@ -103,7 +107,9 @@
     top: 2%; }
 
 #theStore {
-  background-color: white; }
+  background-color: white;
+  padding-bottom: 5em;
+  padding-top: 5em; }
   #theStore .section-header {
     text-align: left;
     font-family: 'nexa', serif;
@@ -113,7 +119,7 @@
       margin-left: 2em;
       font-size: 4em; }
   #theStore .theStoreContainer {
-    padding: 5em 8em 0 8em;
+    padding: 0 8em 0 8em;
     height: 50em;
     text-align: center;
     font-family: 'butler', serif; }
@@ -207,3 +213,118 @@
         @media (min-width: 1590px) {
           #theStore .theStoreContainer .theStoreText3 p {
             font-size: 1.2em; } }
+
+#awards {
+  padding-bottom: 5em; }
+  #awards .section-header {
+    text-align: left;
+    font-family: 'nexa', serif;
+    padding-top: 5em; }
+    #awards .section-header h1 {
+      margin-left: 2em;
+      font-size: 4em; }
+  #awards .awardsMain {
+    padding: 0 8em 0 8em;
+    text-align: center; }
+    #awards .awardsMain .awardsSecond {
+      height: 12em; }
+      #awards .awardsMain .awardsSecond #award1 {
+        height: 10em;
+        background: url("/public/media/award1.jpg") center/cover; }
+      #awards .awardsMain .awardsSecond #award2 {
+        height: 10em;
+        background: url("/public/media/award2.jpg") center/cover; }
+      #awards .awardsMain .awardsSecond #award3 {
+        height: 10em;
+        background: url("/public/media/award3.jpg") center/cover; }
+
+#gallery {
+  padding-bottom: 5em; }
+  #gallery .section-header {
+    text-align: left;
+    font-family: 'nexa', serif; }
+    #gallery .section-header h1 {
+      margin-left: 2em;
+      font-size: 4em; }
+  #gallery .galleryGrid {
+    padding: 0 5em 0 5em;
+    width: 100vw; }
+    #gallery .galleryGrid .gridImg {
+      height: 15vw;
+      width: 100%;
+      margin-bottom: 2em; }
+
+#contact-us {
+  background-color: white;
+  padding-top: 3em; }
+  #contact-us .section-header {
+    text-align: left;
+    font-family: 'nexa', serif; }
+    #contact-us .section-header h1 {
+      margin-left: 2em;
+      font-size: 4em; }
+  #contact-us h5 {
+    padding-bottom: 2em; }
+  #contact-us #toggleInput {
+    padding-bottom: 3em; }
+  #contact-us .togglepadding {
+    padding-right: 0; }
+  #contact-us .toggletext {
+    padding-left: 0;
+    position: relative; }
+  #contact-us .cmn-toggle {
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden; }
+  #contact-us .cmn-toggle + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none; }
+  #contact-us input.cmn-toggle-round-flat + label {
+    padding: 2px;
+    width: 66px;
+    height: 36px;
+    background-color: #BBBBBB;
+    border-radius: 30px;
+    transition: background 0.2s; }
+  #contact-us input.cmn-toggle-round-flat + label:before,
+  #contact-us input.cmn-toggle-round-flat + label:after {
+    display: block;
+    position: absolute;
+    content: ""; }
+  #contact-us input.cmn-toggle-round-flat + label:before {
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    background-color: #fff;
+    border-radius: 30px;
+    transition: background 0.2s; }
+  #contact-us input.cmn-toggle-round-flat + label:after {
+    top: 4px;
+    left: 4px;
+    bottom: 4px;
+    width: 28px;
+    background-color: #BBBBBB;
+    border-radius: 30px;
+    transition: margin 0.2s, background 0.2s; }
+  #contact-us input.cmn-toggle-round-flat:checked + label {
+    background-color: #0c3766; }
+  #contact-us input.cmn-toggle-round-flat:checked + label:after {
+    margin-left: 30px;
+    background-color: #0c3766; }
+  #contact-us .jumbotron {
+    background-color: white;
+    display: none; }
+    #contact-us .jumbotron .btn-indigo {
+      background-color: #0c3766;
+      color: white; }
+    #contact-us .jumbotron textarea {
+      max-width: 100%;
+      height: 200px; }
+
+footer {
+  height: 8em;
+  background-color: #32404f; }

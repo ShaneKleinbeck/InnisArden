@@ -19,6 +19,7 @@
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="public/css/mdb.min.css">
   <link rel="stylesheet" href="public/css/styles.css">
   <link rel="stylesheet" href="public/css/animations.css">
 
@@ -29,9 +30,9 @@
 <div class="hide-overlay">
   <div class="overlay-content">
     <a class="overlay-nav" data-scroll href="#theStore">Store</a>
-    <a class="overlay-nav" data-scroll href="">Awards</a>
-    <a class="overlay-nav" data-scroll href="">Gallery</a>
-    <a class="overlay-nav" data-scroll href="">Contact</a>
+    <a class="overlay-nav" data-scroll href="#awards">Awards</a>
+    <a class="overlay-nav" data-scroll href="#gallery">Gallery</a>
+    <a class="overlay-nav" data-scroll href="#contact-us">Contact</a>
   </div>
 </div>
 
@@ -43,17 +44,17 @@
         <span>The Store</span>
         </div>
       </a>
-      <a href="#" data-scroll class="nav-section hvr-float">
+      <a href="#awards" data-scroll class="nav-section hvr-float">
         <div class="nav-section-background hvr-overline-reveal">
           <span>Awards</span>
         </div>
       </a>
-      <a href="#" data-scroll class="nav-section hvr-float">
+      <a href="#gallery" data-scroll class="nav-section hvr-float">
         <div class="nav-section-background hvr-overline-reveal">
           <span>Gallery</span>
         </div>
       </a>
-      <a href="#" data-scroll class="nav-section hvr-float">
+      <a href="#contact-us" data-scroll class="nav-section hvr-float">
         <div class="nav-section-background hvr-overline-reveal">
           <span>Contact</span>
         </div>
@@ -64,7 +65,7 @@
   </div>
   <div class="video-content">
     <a href="#"><h2 class="video-brand">Innis Arden Records</h2></a>
-    <a><img src="/public/media/cd-recording.svg" alt="" id="menu-logo"></a>
+    <a><img src="/public/media/cd-recording.svg" alt="" class="gridImg" id="menu-logo"></a>
     <div class="video-main-text">
       <h2>Lorem Ipsum</h2>
       <br>
@@ -74,16 +75,18 @@
   <video class="video-background" src="/public/media/turning_record.mp4"</video>
 </div>
 
+<div id="remainder">
+
 <section id="theStore">
   <section class="section-header">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12">
-        <h1>01 | The Store</h1>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1>01 | The Store</h1>
+        </div>
       </div>
-    </div>
-    <hr>
-  </div>  
+      <hr>
+    </div>  
   </section>
   <div class="container-fluid">
     <div class="row theStoreContainer">
@@ -116,13 +119,104 @@
   </div>
 </section>
 
+<section id="awards">
+  <section class="section-header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1>02 | Awards</h1>
+        </div>
+      </div>
+      <hr>
+    </div>  
+  </section>
+</section>
 
+<section id="gallery">
+  <section class="section-header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1>03 | Gallery</h1>
+        </div>
+      </div>
+      <hr>
+    </div>  
+  </section>
+  <div class="row galleryGrid"></div>
+</section>
+
+<section id="contact-us">
+  <section class="section-header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1>04 | Contact Us</h1>
+        </div>
+      </div>
+      <hr>
+    </div>  
+  </section>
+  <div class="container">
+    <h5>If you have any questions regarding the store, our inventory, or our listening tables please feel free to leave us your info and your question and we will get back to you with all your answers!</h5>
+    <div class="switch">
+      <div class="row">
+        <div class="col-lg-1 togglepadding">
+          <input id="toggleInput" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+          <label for="toggleInput"></label>
+        </div>
+        <div class="col-lg-11 toggletext">
+          <h5>Click Here To Open Contact Form</h5>
+        </div>
+      </div>
+    </div>
+    <div class="jumbotron z-depth-2">
+      <div class="row">
+        <form class="col-md-12">
+          <div class="row">
+            <div class="input-field col-md-6">
+              <i class="fa fa-user prefix"></i>
+              <input id="icon_prefix" type="text" class="validate">
+              <label for="icon_prefix">Name</label>
+            </div>
+            <div class="input-field col-md-6">
+              <i class="fa fa-phone prefix"></i>
+              <input id="icon_telephone" type="tel" class="validate">
+              <label for="icon_telephone">Telephone</label>
+            </div>
+            <div class="input-field col-md-12">
+              <i class="fa fa-envelope prefix"></i>
+              <input type="email" id="form9" class="form-control validate">
+              <label for="form9" data-error="Need @ / .com" data-success="">Type your email</label>
+            </div>
+            <div class="md-form col-md-12">
+              <i class="fa fa-pencil prefix"></i>
+              <textarea type="text" id="form8" class="md-textarea"></textarea>
+              <label for="form8">Enter Questions Here</label>
+            </div>
+            <div class=" col-md-12">
+              <button id="submit" type="button" class="btn btn-indigo pull-right">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="page-footer center-on-small-only"></footer>
+
+
+</div>
 <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-  <script src="public/js/index.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="public/js/index.js"></script>
   <script src="/node_modules/smooth-scroll/dist/js/smooth-scroll.js"></script>
+  <script src="public/js/mdb.min.js"></script>
+  <script src="https://use.fontawesome.com/12f27ad263.js"></script>
+  
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
