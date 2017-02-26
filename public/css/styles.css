@@ -8,7 +8,25 @@
 
 #remainder {
   background-color: white;
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
+
+.section-header {
+  text-align: left;
+  font-family: 'nexa', serif;
+  background-color: white;
+  padding: 4em 0 0em 0; }
+  @media (max-width: 374px) {
+    .section-header h1 {
+      text-align: center;
+      font-size: 3em; } }
+  @media (max-width: 767px) {
+    .section-header h1 {
+      text-align: center; } }
+  @media (min-width: 768px) {
+    .section-header h1 {
+      margin-left: 2em;
+      font-size: 4em; } }
 
 .hide-overlay {
   height: 100%;
@@ -56,7 +74,7 @@
   font-family: 'Cardo', serif; }
   .video-wrapper .video-nav {
     display: none; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1025px) {
     .video-wrapper .video-nav {
       display: block;
       position: fixed;
@@ -79,50 +97,68 @@
             top: 30%; } }
   .video-wrapper .video-background {
     z-index: -2;
-    position: fixed;
     object-fit: cover;
+    position: fixed;
     width: 100%;
     height: 100%; }
-  .video-wrapper .video-brand {
-    font-size: 1.2vw;
+  .video-wrapper .video-content {
     position: fixed;
-    top: 1.5%;
-    left: 2%;
-    color: white; }
-  .video-wrapper .video-main-text {
-    z-index: -1;
-    width: 30vw;
-    position: fixed;
-    top: 60%;
-    left: 20%;
-    font-size: .9vw; }
-    .video-wrapper .video-main-text :first-child {
-      font-size: 1.7vw; }
+    text-align: center;
+    width: 100%;
+    top: 25%; }
+    .video-wrapper .video-content .video-brand {
+      font-size: 5vw;
+      color: white; }
+      @media (max-width: 767px) {
+        .video-wrapper .video-content .video-brand {
+          font-size: 8vw; } }
   .video-wrapper #menu-logo {
     cursor: pointer;
-    width: 2vw;
+    width: 8vw;
     position: fixed;
     z-index: 2;
-    left: 96%;
-    top: 2%; }
+    left: 88%;
+    top: 4%; }
+    @media (min-width: 650px) {
+      .video-wrapper #menu-logo {
+        left: 92%;
+        width: 4.5vw; } }
+    @media (min-width: 900px) {
+      .video-wrapper #menu-logo {
+        left: 93%;
+        width: 4vw; } }
+    @media (min-width: 1050px) {
+      .video-wrapper #menu-logo {
+        width: 3vw;
+        left: 95%; } }
 
 #theStore {
   background-color: white;
   padding-bottom: 5em;
   padding-top: 5em; }
-  #theStore .section-header {
-    text-align: left;
-    font-family: 'nexa', serif;
-    background-color: white;
-    padding-top: 5em; }
-    #theStore .section-header h1 {
-      margin-left: 2em;
-      font-size: 4em; }
+  @media (max-width: 767px) {
+    #theStore {
+      height: 145em; } }
   #theStore .theStoreContainer {
     padding: 0 8em 0 8em;
-    height: 50em;
+    height: 20em;
     text-align: center;
     font-family: 'butler', serif; }
+    @media (max-width: 767px) {
+      #theStore .theStoreContainer {
+        padding: 0; } }
+    @media (min-width: 830px) {
+      #theStore .theStoreContainer {
+        padding: 0 8em 0 8em;
+        height: 30em; } }
+    @media (min-width: 1050px) {
+      #theStore .theStoreContainer {
+        padding: 0 8em 0 8em;
+        height: 40em; } }
+    @media (min-width: 1250px) {
+      #theStore .theStoreContainer {
+        padding: 0 8em 0 8em;
+        height: 50em; } }
     #theStore .theStoreContainer .theStoreMedia1 {
       background: url("/public/media/theStore1.jpg") no-repeat center center;
       background-size: cover;
@@ -132,29 +168,69 @@
       height: 100%;
       color: white; }
       #theStore .theStoreContainer .theStoreText1 h2 {
-        padding: 0 1em 0 1em;
         margin-top: 2em;
-        font-size: 3.5em; }
+        font-size: 2.5em; }
+        @media (max-width: 767px) {
+          #theStore .theStoreContainer .theStoreText1 h2 {
+            margin-top: 0;
+            padding-top: 2em; } }
+        @media (min-width: 830px) {
+          #theStore .theStoreContainer .theStoreText1 h2 {
+            margin-top: 3.5em;
+            font-size: 3em; } }
+        @media (min-width: 1024px) {
+          #theStore .theStoreContainer .theStoreText1 h2 {
+            margin-top: 1.5em;
+            font-size: 2.5em; } }
+        @media (min-width: 1050px) {
+          #theStore .theStoreContainer .theStoreText1 h2 {
+            margin-top: 1.5em;
+            font-size: 3em; } }
         @media (min-width: 1200px) {
           #theStore .theStoreContainer .theStoreText1 h2 {
-            font-size: 2.5em; } }
+            margin-top: 1.5em;
+            font-size: 3.8em; } }
         @media (min-width: 1312px) {
           #theStore .theStoreContainer .theStoreText1 h2 {
-            font-size: 3.5em; } }
+            margin-top: 1.5em;
+            font-size: 4em; } }
+        @media (min-width: 1415px) {
+          #theStore .theStoreContainer .theStoreText1 h2 {
+            margin-top: 1.5em;
+            font-size: 4.5em; } }
       #theStore .theStoreContainer .theStoreText1 p {
-        margin: 3em;
-        padding: 0 4em 0 4em;
         font-family: nexa;
-        font-size: 1.1em; }
+        display: none; }
+        @media (min-width: 1024px) {
+          #theStore .theStoreContainer .theStoreText1 p {
+            display: block;
+            margin: 1em 3em 3em 3em;
+            font-size: 1em; } }
+        @media (min-width: 1050px) {
+          #theStore .theStoreContainer .theStoreText1 p {
+            display: block;
+            margin: 1em 3em 3em 3em;
+            font-size: 1.2em; } }
+        @media (min-width: 1250px) {
+          #theStore .theStoreContainer .theStoreText1 p {
+            display: block;
+            margin: 1em 3em 3em 3em;
+            font-size: 1.5em; } }
         @media (min-width: 1308px) {
           #theStore .theStoreContainer .theStoreText1 p {
-            font-size: 1em; } }
+            display: block;
+            margin: 1em 3em 3em 3em;
+            font-size: 1.5em; } }
         @media (min-width: 1480px) {
           #theStore .theStoreContainer .theStoreText1 p {
-            font-size: 1.1em; } }
+            display: block;
+            margin: 1em 3em 3em 3em;
+            font-size: 1.5em; } }
         @media (min-width: 1590px) {
           #theStore .theStoreContainer .theStoreText1 p {
-            font-size: 1.2em; } }
+            display: block;
+            margin: 1em 3em 3em 3em;
+            font-size: 1.4em; } }
     #theStore .theStoreContainer .theStoreMedia2 {
       background: url("/public/media/theStore2.jpg") no-repeat center center;
       background-size: cover;
@@ -164,23 +240,70 @@
       height: 100%;
       color: black; }
       #theStore .theStoreContainer .theStoreText2 h2 {
-        padding: 0 1em 0 1em;
-        margin-top: 2em;
-        font-size: 4em;
+        margin-top: 2.5em;
+        font-size: 2.5em;
         color: #96858F; }
+        @media (max-width: 767px) {
+          #theStore .theStoreContainer .theStoreText2 h2 {
+            margin-top: 0;
+            padding-top: 2.5em; } }
+        @media (min-width: 830px) {
+          #theStore .theStoreContainer .theStoreText2 h2 {
+            margin-top: 3.5em;
+            font-size: 3em;
+            color: #96858F; } }
+        @media (min-width: 950px) {
+          #theStore .theStoreContainer .theStoreText2 h2 {
+            margin-top: 2em;
+            font-size: 4em;
+            color: #96858F; } }
+        @media (min-width: 1024px) {
+          #theStore .theStoreContainer .theStoreText2 h2 {
+            padding: 0 1em 0 1em;
+            margin-top: 2em;
+            font-size: 3em;
+            color: #96858F; } }
+        @media (min-width: 1086px) {
+          #theStore .theStoreContainer .theStoreText2 h2 {
+            padding: 0 1em 0 1em;
+            margin-top: 2em;
+            font-size: 3.5em;
+            color: #96858F; } }
       #theStore .theStoreContainer .theStoreText2 p {
-        font-size: 1em;
-        margin: 2em;
-        padding: 0 4em 0 4em;
-        font-family: nexa; }
+        display: none; }
+        @media (min-width: 1024px) {
+          #theStore .theStoreContainer .theStoreText2 p {
+            display: block;
+            font-size: .8em; } }
+        @media (min-width: 1050px) {
+          #theStore .theStoreContainer .theStoreText2 p {
+            display: block;
+            margin: 1em;
+            padding: 0 1em 0 1em;
+            font-size: 1em; } }
+        @media (min-width: 1086px) {
+          #theStore .theStoreContainer .theStoreText2 p {
+            display: block;
+            margin: 1em;
+            padding: 0 1em 0 1em;
+            font-size: 1em; } }
         @media (min-width: 1308px) {
           #theStore .theStoreContainer .theStoreText2 p {
+            display: block;
+            margin: 2em;
+            padding: 0 4em 0 4em;
             font-size: 1em; } }
         @media (min-width: 1480px) {
           #theStore .theStoreContainer .theStoreText2 p {
+            display: block;
+            margin: 2em;
+            padding: 0 4em 0 4em;
             font-size: 1.1em; } }
         @media (min-width: 1590px) {
           #theStore .theStoreContainer .theStoreText2 p {
+            display: block;
+            margin: 2em;
+            padding: 0 4em 0 4em;
             font-size: 1.2em; } }
     #theStore .theStoreContainer .theStoreMedia3 {
       background: url("/public/media/theStore4.jpg") no-repeat center center;
@@ -192,79 +315,91 @@
       color: white; }
       #theStore .theStoreContainer .theStoreText3 h2 {
         padding: 0 1em 0 1em;
-        margin-top: 2em;
-        font-size: 3em; }
+        margin-top: 1.6em;
+        font-size: 2.2em; }
+        @media (max-width: 767px) {
+          #theStore .theStoreContainer .theStoreText3 h2 {
+            margin-top: 0;
+            padding-top: 3em; } }
+        @media (min-width: 837px) {
+          #theStore .theStoreContainer .theStoreText3 h2 {
+            margin-top: 3em;
+            font-size: 2.5em; } }
+        @media (min-width: 947px) {
+          #theStore .theStoreContainer .theStoreText3 h2 {
+            margin-top: 2em;
+            font-size: 3em; } }
+        @media (min-width: 1024px) {
+          #theStore .theStoreContainer .theStoreText3 h2 {
+            margin-top: 2em;
+            font-size: 2.2em; } }
+        @media (min-width: 1148px) {
+          #theStore .theStoreContainer .theStoreText3 h2 {
+            margin-top: 2em;
+            font-size: 2.8em; } }
+        @media (min-width: 1250px) {
+          #theStore .theStoreContainer .theStoreText3 h2 {
+            margin-top: 2em;
+            font-size: 3em; } }
         @media (min-width: 1364px) {
           #theStore .theStoreContainer .theStoreText3 h2 {
+            margin-top: 2em;
             font-size: 3.5em; } }
         @media (min-width: 1510px) {
           #theStore .theStoreContainer .theStoreText3 h2 {
+            margin-top: 2em;
             font-size: 4em; } }
       #theStore .theStoreContainer .theStoreText3 p {
-        font-size: 1.2em;
-        margin: 3em;
+        display: none;
         font-family: nexa; }
-        @media (min-width: 1308px) {
+        @media (min-width: 1024px) {
           #theStore .theStoreContainer .theStoreText3 p {
+            display: block;
+            margin: .8em;
             font-size: 1em; } }
+        @media (min-width: 1148px) {
+          #theStore .theStoreContainer .theStoreText3 p {
+            display: block;
+            margin: 2em;
+            font-size: 1.2em; } }
         @media (min-width: 1480px) {
           #theStore .theStoreContainer .theStoreText3 p {
+            display: block;
+            margin: 2em;
             font-size: 1.1em; } }
         @media (min-width: 1590px) {
           #theStore .theStoreContainer .theStoreText3 p {
+            display: block;
+            margin: 2em;
             font-size: 1.2em; } }
-
-#awards {
-  padding-bottom: 5em; }
-  #awards .section-header {
-    text-align: left;
-    font-family: 'nexa', serif;
-    padding-top: 5em; }
-    #awards .section-header h1 {
-      margin-left: 2em;
-      font-size: 4em; }
-  #awards .awardsMain {
-    padding: 0 8em 0 8em;
-    text-align: center; }
-    #awards .awardsMain .awardsSecond {
-      height: 12em; }
-      #awards .awardsMain .awardsSecond #award1 {
-        height: 10em;
-        background: url("/public/media/award1.jpg") center/cover; }
-      #awards .awardsMain .awardsSecond #award2 {
-        height: 10em;
-        background: url("/public/media/award2.jpg") center/cover; }
-      #awards .awardsMain .awardsSecond #award3 {
-        height: 10em;
-        background: url("/public/media/award3.jpg") center/cover; }
 
 #gallery {
   padding-bottom: 5em; }
-  #gallery .section-header {
-    text-align: left;
-    font-family: 'nexa', serif; }
-    #gallery .section-header h1 {
-      margin-left: 2em;
-      font-size: 4em; }
+  @media (max-width: 767px) {
+    #gallery {
+      padding-bottom: 0; } }
   #gallery .galleryGrid {
     padding: 0 5em 0 5em;
     width: 100vw; }
+    @media (max-width: 767px) {
+      #gallery .galleryGrid {
+        padding: 0 0 0 2.5em; } }
     #gallery .galleryGrid .gridImg {
-      height: 15vw;
+      height: 20vw;
       width: 100%;
       margin-bottom: 2em; }
+      @media (max-width: 767px) {
+        #gallery .galleryGrid .gridImg {
+          height: 30vw;
+          margin-bottom: 1em; } }
 
 #contact-us {
   background-color: white;
   padding-top: 3em; }
-  #contact-us .section-header {
-    text-align: left;
-    font-family: 'nexa', serif; }
-    #contact-us .section-header h1 {
-      margin-left: 2em;
-      font-size: 4em; }
-  #contact-us h5 {
-    padding-bottom: 2em; }
+  @media (max-width: 767px) {
+    #contact-us h5 {
+      font-size: 1.5em;
+      padding-bottom: 2em; } }
   #contact-us #toggleInput {
     padding-bottom: 3em; }
   #contact-us .togglepadding {
@@ -272,6 +407,9 @@
   #contact-us .toggletext {
     padding-left: 0;
     position: relative; }
+    @media (max-width: 767px) {
+      #contact-us .toggletext {
+        padding-left: 1.3em; } }
   #contact-us .cmn-toggle {
     position: absolute;
     margin-left: -9999px;

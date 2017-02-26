@@ -8,7 +8,7 @@ $(document).ready(function(){
 
   // Implement gallery
   for(var i = 0; i < photos.length; i++){
-    $('.galleryGrid').append('<div class="col-xs-3"><a href="" data-toggle="modal"><img src="' + photos[i] + '" alt="" class="gridImg"></a></div>');
+    $('.galleryGrid').append('<div class="col-xs-6 col-sm-3"><a href="" data-toggle="modal"><img src="' + photos[i] + '" alt="" class="gridImg"></a></div>');
   }
 
   // Toggle Form
@@ -37,7 +37,7 @@ $(document).ready(function(){
   // Hide Brand When Scrolling Past Banner Page
   $(window).scroll(function(){
     var scroll = $(window).scrollTop();
-    var height = document.documentElement.clientHeight * .95;
+    var height = document.documentElement.clientHeight * .7;
     if(scroll > height){
       $('.video-brand').css({"display": "none"});
     } else {
